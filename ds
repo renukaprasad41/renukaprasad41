@@ -1,0 +1,7 @@
+#include<stdio.h>
+void main()
+{   
+    int * pi;
+    pi=malloc(sizeof(int));
+    printf("%d",pi);
+}
