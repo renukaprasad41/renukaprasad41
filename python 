@@ -1,0 +1,29 @@
+ii) lower( ): This method is used to convert upper case characters into lower case characters.
+Ex: x = ‘Python’
+x = x.lower( )
+python
+iii) isupper( ): This method is used to check whether a string has at least one letter or complete 
+string is upper or not. It returns Boolean value.
+Ex: x = ‘Python’
+x = x.isupper( )
+TRUE
+Ex: y = ‘python’
+y = y.isupper( )
+FALSE
+iv) islower( ): This method is used to check whether a string has at least one letter or complete 
+string is lower or not. It returns Boolean value.
+Ex: x = ‘Python’
+x = x.islower( )
+TRUE
+Ex: y = ‘PYTHON’
+y = y.isupper( )
+FALSE
+v) isspace( ): Returns True if the string consists only of spaces, tabs, and newlines and is not 
+blank. 
+Ex: ‘ ‘.isspace( )
+TRUE
+vi) isalnum( ): Returns True if the string consists only of letters and numbers and is not blank.
+Ex: ‘hello123’.isalnum( )
+TRUE
+Ex: ‘ ‘.isalnum( )
+FALSE
