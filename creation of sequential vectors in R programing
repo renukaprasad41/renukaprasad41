@@ -1,0 +1,11 @@
+c) Generation of Sequences and Creation of Vectors:
+# Sequence generation
+sequence <- seq(1, 10, by = 2)
+cat("Sequence:", sequence, "\n")
+# Creation of vectors
+numeric_vector <- c(1.5, 2.5, 3.5)
+logical_vector <- c(TRUE, FALSE, TRUE)
+character_vector <- c("apple", "banana", "orange")
+cat("Numeric Vector:", numeric_vector, "\n")
+cat("Logical Vector:", logical_vector, "\n")
+cat("Character Vector:", character_vector, "\n")
