@@ -1,0 +1,8 @@
+ Main memory is central to the operation of a modern computer system .is a
+repository of quickly accessible data shared by the CPU and I/O devices.
+ Instructions must be in memory for the CPU to execute them.
+ For a program to be executed, it must be mapped to absolute addresses and loaded
+into memory. As the program executes, it accesses program instructions and data
+from memory by generating these absolute addresses. After program termination, its 
+memory space is declared available, and the next program can be loaded and
+execute
