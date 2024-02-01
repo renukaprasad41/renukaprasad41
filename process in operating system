@@ -1,0 +1,10 @@
+A process is a program in execution. It is the unit of work within the system.Program is a
+passive entity. Process is an active entity.
+ Process needs resources to accomplish its task Ex: CPU, Memory, I/O.
+ Process termination requires reclaim of any reusable resources.
+ Single-threaded process has one program counter specifying the location of next
+instruction to execute.
+ Process executes instructions sequentially, one at a time, until completion
+ Typically system has many processes, some user, some operating system running
+concurrently onone or more CPUs.
+ Multi0threaded process has one program counter per thread.
