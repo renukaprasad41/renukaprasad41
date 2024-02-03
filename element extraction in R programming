@@ -1,0 +1,6 @@
+f) Element Extraction from Vectors, Matrices, and Arrays:
+# Element extraction
+element_x <- vector_x[2]
+element_matrix_a <- matrix_a[1, 2]
+cat("Element X:", element_x, "\n")
+cat("Element in Matrix A:", element_matrix_a, "\n")
