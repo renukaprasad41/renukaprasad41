@@ -1,0 +1,15 @@
+Multilevel Queue Scheduling
+ Thisisusedfortheprocesseswhichcanbeclassifiedintodifferentgroups
+ A multilevel Queue scheduling algorithm partitions the ready queue into 
+several separate queues. The processes are permanently assigned to one 
+queue based on some priority.
+ Each queue has its own scheduling algorithm.
+Ex: separate queues might be used for foreground and background 
+processes. The foreground queue might be scheduled by an RR algorithm, 
+while the background queue is scheduled by an FCFS algorithm.
+ There must be scheduling among the queues.
+ Ex: Five queues are listed below in the order of priority .
+o System processes
+o Interactive processes
+o Interactive editing processes
+o Batch processes
