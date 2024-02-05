@@ -1,0 +1,5 @@
+Because of the high cost, most SMP systems try to avoid migration of processes 
+from one processor to another and instead attempt to keep a process running on 
+the same processor.
+Processor affinity, meaning that a process has an affinity for the processor on 
+which it is currently running.
