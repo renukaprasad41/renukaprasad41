@@ -1,0 +1,13 @@
+ A thread library provides the programmer an API for creating and managing threads.
+There are two primary ways of implementing a thread library.
+ The first approach is to provide a library entirely in user space with no kernel support. 
+All code and data structures for the library exist in user space.
+ The second approach is to implement a kernel-level library supported directly by the 
+operating system.
+ Three main thread libraries are in use today:
+1. POSIX threads
+2. Win32
+3. Java threads
+ POSIX standard threads or Pthreads maybe provided as user or kernel level library.
+ Win32 thread library is a kernel-level library available on windows systems.
+ Java thread API allows threads creation and management directly in java program
