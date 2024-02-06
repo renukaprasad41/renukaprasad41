@@ -1,0 +1,10 @@
+Idea behind a thread pool is to create a number of threads at process startup and place 
+them into a pool, where they sit and wait for work.
+ When a server receives a quest, it awakens a thread from this pool- if one is available
+ Server passes the request to this thread
+ Once the thread completes its service, it returns to the pool and awaits more work.
+ If the pool contains no available thread, the server waits until one becomes free.
+ Advantages of thread pools are-
+ Servicing a request with an existing thread is usually faster than waiting to create a 
+thread.
+ A thread pool limits the number of threads that exist at anyone point.
