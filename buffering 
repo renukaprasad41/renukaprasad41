@@ -1,0 +1,6 @@
+ Buffering
+✓ Messages exchanged by communicating processes reside in a temporary queue, and such 
+queues can be implemented in one of three ways,
+1. Zero capacity – Maximum length is zero and sender must wait for the receiver.
+2. Bounded capacity – finite length of n messages, sender must wait if link isfull.
+3. Unbounded capacity – infinite length and sender never waits.
