@@ -1,0 +1,8 @@
+ Synchronization
+✓ Message passing may be either blocking or non-blocking. Blocking is considered
+synchronous. Non-blocking is considered asynchronous.
+o Blocking send: The sending process is blocked until the message is received by the 
+receiving process or by the mailbox.
+o Non-blocking send: The sending process sends the message and resumes operation.
+o Blocking receive: The receiver blocks until a message is available.
+o Non-blocking receive: The receiver retrieves either a valid message or a null.
