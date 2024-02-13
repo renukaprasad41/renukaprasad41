@@ -1,0 +1,6 @@
+> install.packages(“XML”)
+> library(XML)
+> xml_file <- system.file(“extdata”, “options.xml”, package = “learningr”)
+> r_options <- xmlParse(xml_file)
+> xmlParse(xml_file, useInternalNodes = FALSE)
+> xmlTreeParse(xml_file)
