@@ -1,0 +1,11 @@
+> install.packages(“DBI”)
+> install.packages(“RSQLite”)
+> library(DBI)
+> library(RSQLite)
+> driver <- dbDriver(“SQLite”)
+> db_file <- system.file(“extdata”, “crabtag.sqlite”, package = “learningr”)
+> conn <- dbConnect(driver, db_file)
+> query <- “SELECT * FROM IdBlock”
+> id_block <- dbGetQuery(conn, query)
+> id_block
+ 
