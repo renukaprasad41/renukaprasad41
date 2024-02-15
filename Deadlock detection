@@ -1,0 +1,7 @@
+Deadlock Detection 
+ If a system does not employee either a deadlock-prevention or a deadlock-
+avoidance algorithm, then a deadlock situation may occur. 
+ System may provide: 
+ An algorithm that examines the state of the system to determine whether a deadlock 
+has occurred 
+ An algorithm to recover from the deadlock
