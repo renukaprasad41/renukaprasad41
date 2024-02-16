@@ -1,0 +1,15 @@
+4.3. Pie Charts
+ In R the pie chart is created using the pie() function which takes positive numbers as 
+vector input. The additional parameters are used to control labels, colour, title etc. 
+ The basic syntax for creating a pie-chart is as given below and the explanation of the 
+parameters are also listed.
+> install.packages("scales")
+> library(scales)
+# Sample data
+> x <- c(25, 35, 10, 5, 15)
+> labels <- c("Rose", "Lotus", "Lilly", "Sunflower", "Jasmine")
+> percent <- scales::percent(x / sum(x))
+# Plotting the pie chart
+> pie(x, labels = percent, main = "Flowers", col = rainbow(length(x)))
+> legend("topright", c("Rose", "Lotus", "Lilly", "Sunflower", "Jasmine"), 
+cex = 0.8, fill = rainbow(length(x
