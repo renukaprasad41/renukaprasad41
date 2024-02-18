@@ -1,0 +1,22 @@
+Date Conversions
+In CSV files the dates will be normally stored as strings and they have to be converted 
+into date and time using any of the packages. For this we need to parse the strings 
+using the function strptime() and this returns the date of the format POSIXlt. 
+The date format is specified as a string and passed as argument to the strptime()
+function. If the given string does not match the format given in the format string, 
+then it returns NA.
+> date1 <- strptime(“22:15:45 22/08/2015”, “%H:%M:%S %d/%m/%Y”)
+> date1
+[1] “2015-08-22 22:15:45 IST”
+> date2 <- strptime(“22:15:45 22/08/2015”, “%H:%M:%S %d-%m-%Y”)
+> date2
+[1] NA
+In the format string “%H” denotes hour in 24 hour system, “%M” denotes 
+minutes, “%S” denotes second, “%m” denotes the number of the month, “%d”
+denotes the day of the month as number, “%Y” denotes four digit year.
+To convert a date into a string the function strftime() is used. This function also 
+takes a date formatting string as argument like strptime(). In the format string “%I”
+denotes hour in 12 hours system, “%p” denotes AM/PM, “%A” denotes the string of 
+day of the week, “%B” denotes the string of name of the month.
+> strftime(Sys.Date(),”It’s %I:%M%p on %A %d %B, %Y.”)
+[1] “It’s 12:00AM on Thursday 11 May, 2017.
