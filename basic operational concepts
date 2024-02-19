@@ -1,0 +1,16 @@
+BASIC OPERATIONAL CONCEPTS
+• An Instruction consists of 2 parts, 1) Operation code (Opcode) and 2) Operands.
+OPERANDS
+• The data/operands are stored in memory. • The individual instruction are brought from the memory to the processor. • Then, the processor performs the specified operation. • Let us see a typical instruction
+ADD LOCA, R0
+• This instruction is an addition operation. The following are the steps to execute the instruction: 
+Step 1: Fetch the instruction from main-memory into the processor.
+Step 2: Fetch the operand at location LOCA from main-memory into the processor.
+Step 3: Add the memory operand (i.e. fetched contents of LOCA) to the contents of register R0. 
+Step 4: Store the result (sum) in R0. • The same instruction can be realized using 2 instructions as:
+Load LOCA, R1 
+Add R1, R0
+• The following are the steps to execute the instruction:
+Step 1: Fetch the instruction from main-memory into the processor.
+Step 2: Fetch the operand at location LOCA from main-memory into the register R1. 
+Step 3: Add the content of Register R1 
