@@ -1,0 +1,26 @@
+Matrices and Arrays
+A matrix is a collection of data elements with the same basic type arranged in a two-
+dimensional rectangular layout. An array consists of multidimensional rectangular 
+data. Matrices are special cases of two-dimensional arrays. To create an array the 
+array() function can be used and a vector of values and vector of dimensions are 
+passed to it.
+> x <- array(1:24, dim = c(4, 3, 2), 
+ dimnames = list(c(“a”, “b”, “c”, “d”), c(“e”, “f ”, “g”), c(“h”, “i”)))
+> x
+, , h
+ e f g
+a 1 5 9
+b 2 6 10
+c 3 7 11
+d 4 8 12
+, , i
+ e f g
+a 13 17 21
+b 14 18 22
+c 15 19 23
+d 16 20 24
+The syntax for creating matrices is using the function matrix() and passing the 
+nrow or ncol argument instead of the dim argument in the arrays. A matrix can also 
+be created using the array() function where the dimension of the array is two.
+> m <- matrix(1:12, nrow = 3, dimnames = list(c(“a”, “b”, “c”), c(“d”, “e”, “f ”, “g”)))
+> m
