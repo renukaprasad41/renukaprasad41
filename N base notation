@@ -1,0 +1,17 @@
+def nbase(num,n):
+ remi=[]
+ while num!=0:
+ rem=num%n #10 #11 #4
+ remi.append(rem)
+ num=num//n #59 #4 #0
+ result=''
+ for i in remi:
+ if i>9:
+ c=chr(i+55)
+ result=result+c
+ else:
+ c=str(i)
+ result=result+c
+ return result[::-1]
+nbase(54444444444444,13)
+'244C120933A82'
