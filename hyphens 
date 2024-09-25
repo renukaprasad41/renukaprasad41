@@ -1,0 +1,20 @@
+def hyphens(s):
+ alph=''
+ hyp=''
+ for i in s: #h
+ if i=='-':
+ hyp=hyp+i #''+'-' = '-','-'+'-'='--'
+ else:
+ alph=alph+i #''+h='h'+'e'='he'+'l'='hel'
+ return hyp+alph
+hyphens("vinay-sindhu-siet")
+'--vinaysindhusiet'
+def get_remainder(n,num):
+ if n==0:
+ return "divisor can not be zero"
+ r=n%num
+ return r
+ 
+res=get_remainder(112,12)
+print(res)
+4
