@@ -1,0 +1,11 @@
+def palindrome(num):
+ N =num #N=392
+ rev=0
+ while N!=0: 
+ rem=N%10 
+ rev=rev*10+rem 
+ N=N//10
+ return num==rev
+ 
+palindrome(121)
+True
