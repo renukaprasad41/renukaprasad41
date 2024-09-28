@@ -1,0 +1,16 @@
+def rev(num): #293
+ r = str(num) #'293'
+ return r[::-1]
+rev(293)
+'392'
+#without typecasting
+def reverse(num): #392
+ result=0
+ while num!=0: #392!=0 #39!=0 #3!
+ rem=num%10 #2 #9 #3
+ result=result*10+rem #2 #29 #29*10+3
+ num=num//10 #39 #9 #0
+ return result
+ 
+rev(392)
+'293'
