@@ -1,0 +1,15 @@
+def distance(x1,x2,x3,y1,y2,y3):
+ import math
+ first_diff=math.sqrt(math.pow(x2-x1,2)+math.pow(y2-y1,2))
+ second_diff=math.sqrt(math.pow(x3-x2,2)+math.pow(y3-y2,2))
+ third_diff=math.sqrt(math.pow(x3-x1,2)+math.pow(y3-y1,2))
+ return first_diff+second_diff+third_diff
+distance(1,2,3,1,4,6)
+10.783510444802673
+def distance(x1,x2,x3,y1,y2,y3):
+ import math
+ first_diff=math.sqrt(math.pow(x2-x1,2)+math.pow(y2-y1,2))
+ second_diff=math.sqrt(math.pow(x3-x2,2)+math.pow(y3-y2,2))
+ return first_diff+second_diff
+distance(1,2,3,1,4,6)
+5.39834563766817
